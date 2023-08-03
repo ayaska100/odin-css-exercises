@@ -1,0 +1,7 @@
+/* any p blocks that are inside a div (anywhere) */
+div p {
+    background-color: yellow;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
