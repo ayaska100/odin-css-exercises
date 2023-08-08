@@ -24,6 +24,69 @@ body {
 
 .card {
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+}
+
+/* -------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* MAIN FLEXBOX - HEADER FOOTER CONTENT */
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex: auto;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  padding: 8px 16px;
+}
+
+.sidebar a {
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 48px;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+}
+
+.card {
+  width: 300px;
+  margin: 16px;
+  padding: 16px;
 }
